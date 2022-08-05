@@ -1,0 +1,345 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&family=Rufina:wght@400;700&family=Square+Peg&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Efecto en la barra de scroll */
+    
+}
+body::-webkit-scrollbar{
+    width: 15px;
+    background: #2a2a2a;
+}
+body::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+    background: linear-gradient(#2a2a2a, orange);
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #2a2a2a;
+    margin: 0;
+    color: white;
+    max-width: 100%;
+}
+a{
+    transition: color 0.3s ease;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    transition: 1s;
+}
+a:hover{
+    color:orange;
+
+}
+
+.name_company{
+    color:rgb(255, 255, 255);
+    font-family: 'Square Peg';
+}
+.name_company span{
+    color: orange;
+}
+
+html body header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(39, 39, 39, 0.249);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.134);
+    padding: 15px 30px;
+    position: relative;
+    z-index: 2;
+    transition:0.5s 0.0s;
+}
+
+header:hover{
+    box-shadow: 5px 10px 10px  rgba(0, 0, 0, 0.247);
+    background-color: rgba(39, 39, 39, 0.316);
+
+}
+
+header .logo{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    
+}
+html body nav{
+    justify-content: center;
+    text-align: center;
+}
+h1{
+    margin-top: 8px;
+}
+ul{
+    list-style-type: none;
+    font-size: 15px;
+    padding: 10px;
+}
+html body nav ul li{
+    display: inline-block;
+    padding: 5px;
+    transition: 0.3s;
+
+}
+html body nav ul li:hover{
+    background-color: rgba(2, 2, 2, 0.518);
+    border-radius: 4px;
+}
+html body nav ul li a {
+    padding: 15px 15px;
+    align-items: center;
+}
+.img{
+    display: grid;
+    place-items: center;
+    z-index: -1;
+}
+.img img{
+    max-width: 100%;
+    margin-top: -177px;
+    color: red;
+    filter: opacity(0.4) drop-shadow(0 0 0 rgba(0, 0, 0, 0.749)) blur(3px); 
+
+}
+
+.texto{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.centrado{
+    margin: 0;
+    font-family: 'Square Peg';
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 115px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);}
+
+.centrado span{
+    color: orange;
+}
+.centradoo a{
+    color: orange;
+    margin: 0;
+    font-family: 'Square Peg';
+    font-size: 70px;
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+ 
+}
+.container{
+    height: 480px;
+}
+.container .card{
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.068);
+    width: 290px;
+    height: 430px;
+    overflow: hidden;
+    margin: 15px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover{
+    border: solid 3px orange;
+    background-color: rgba(0, 0, 0, 0.451);
+
+    transform: scale(1.05,1.05);
+    box-shadow:  1px 0 10px 1px rgba(255, 166, 0, 0.285);
+}
+
+.container .card img{
+    width: 330px;
+    height: 250px;
+    filter: opacity(0.9) drop-shadow(0 0 0 rgba(0, 0, 0, 0.41))
+}
+
+.container .card .sancocho{
+    width: 400px;
+    height: 250px;
+    filter: opacity(0.9) drop-shadow(0 0 0 rgba(0, 0, 0, 0.41))
+}
+.container .card h4{
+    margin-bottom: 9px;
+    margin-bottom: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container .card p{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container .card .relog{
+    vertical-align: text-bottom;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+.container .card .precio{
+    
+    vertical-align: text-bottom;
+    margin-top: 3px;
+    width: 20px;
+    height: 20px;
+
+}
+.Menu_{
+    color: orange;
+    margin: 0;
+    padding: 0;
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Square Peg';
+}
+
+.container .card button{
+    font-weight: bold;
+    justify-content: center;
+    padding:10px 20px;
+    background-color: orange;
+    border: none;
+    border-radius:8px;
+    margin-top: 15px;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px 1px rgba(255, 166, 0, 0.149)
+}
+
+.container .card button:hover{
+    box-shadow: 5px 10px 10px  rgba(0, 0, 0, 0.247);
+    background-color: rgba(39, 39, 39, 0.6);
+    color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    width: 100%;
+}
+.about img{
+    width: 100%;
+    grid-column: 1/5;
+    height: 400px;
+}
+.about-info {
+    grid-column: 5/10;
+    padding: 35px;
+}
+.about-info h2{
+    font-size:3.5em;
+    color:orange;
+    font-family: 'Square Peg';
+}
+
+.about p{
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button {
+    font-weight: bold;
+    justify-content: center;
+    padding:10px 20px;
+    background-color: orange;
+    border: none;
+    border-radius:8px;
+    margin-top: 15px;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px 1px rgba(255, 166, 0, 0.515)
+
+}
+button:hover{
+    box-shadow: 5px 10px 10px  rgba(0, 0, 0, 0.247);
+    background-color: rgba(39, 39, 39, 0.6);
+    color: rgb(255, 166, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.full-width{
+    width: 100%;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer{
+    font-family: Arial, Helvetica, sans-serif;
+    
+    max-width: 100%;
+    padding: 5px 0 0 0;
+    background-color: #1c1c1c;
+    color: #fff;
+    justify-content: center;
+}
+.social-links{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    
+}
+.social-links a {
+    
+    margin: 0 10px;
+}
+.social{
+    
+    background-color: orange;
+    padding: 10px;
+    border-radius: 15px;
+}
+.made-with{
+    color: #555;
+}
+.white-bg{
+    background-color: #fff;
+}
